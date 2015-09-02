@@ -17,6 +17,11 @@ function kick(){
 	hits++;
 	update();
 	}
+function reset() {
+	hits=0;
+	health=100;
+	update();
+}
 function update(){
 var hp = document.getElementById("health");
 hp.innerText = health;
@@ -25,3 +30,4 @@ name1.innerText = name;
 var hits1 = document.getElementById("hits");
 hits1.innerText = hits;
 }
+
